@@ -59,7 +59,7 @@ class HtmlTableToJson {
     this._results[tableIndex][index] = {}
 
     this._$(row).find('td').each((i, cell) => {
-      this._results[tableIndex][index][this._headers[tableIndex][i] || (i + 1)] = this._$(cell).text().trim()
+      this._results[tableIndex][index][this._headers[tableIndex][i] || (i + 1)] = this.opts.htmlCells ? this._$(cell).html().trim() : this._$(cell).text().trim()
     })
   }
 
