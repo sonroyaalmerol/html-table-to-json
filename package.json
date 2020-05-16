@@ -1,6 +1,6 @@
 {
   "name": "html-table-to-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extracts all tables within a provided html snippet and converts them to JSON objects.",
   "license": "MIT",
   "repository": "brandon93s/html-table-to-json",
@@ -23,7 +23,7 @@
     "json"
   ],
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3"
+    "jsdom-jscore-rn": "git+https://github.com/iamcco/jsdom-jscore-rn.git"
   },
   "devDependencies": {
     "ava": "^3.0.0",
